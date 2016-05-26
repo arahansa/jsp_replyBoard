@@ -40,7 +40,7 @@ import java.util.Vector;
 public class DBConnectionMgr {
     private Vector<ConnectionObject> connections = new Vector<ConnectionObject>(10);
     private String _driver = "org.gjt.mm.mysql.Driver",
-    _url = "jdbc:mysql://54.238.254.206:3306/reply_board?useUnicode=true&amp;characterEncoding=utf8&connectTimeout=3000&zeroDateTimeBehavior=convertToNull",
+    _url = "jdbc:mysql://localhost:3306/reply_board?useUnicode=true&amp;characterEncoding=utf8&connectTimeout=3000&zeroDateTimeBehavior=convertToNull",
     _user = "hanbittest2",
     _password = "pcqkd50";
     

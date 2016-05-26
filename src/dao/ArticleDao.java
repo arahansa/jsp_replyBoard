@@ -142,7 +142,7 @@ public class ArticleDao {
 			} else
 				grp = 1;
 
-			String sql = "insert into board values(NULL, ?, ?, '1', '0', CURRENT_TIMESTAMP, 0, ?, ?, ?);";
+			String sql = "insert into board values(NULL, ?, ?, '1', '0', CURRENT_TIMESTAMP, 0, ?, ?, ?, 0);";
 
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, article.getTitle());
@@ -205,7 +205,7 @@ public class ArticleDao {
 				pstmt.executeUpdate();
 //	article_id	title	grp	seq	lvl	posting_date	read_count	writer_name	password	content
 // insert into board( title, grp, seq, lvl ) values('반가워요', 1, 1+1,0+1);
-				sql = "insert into board values(NULL, ?, ?, ?, ?, CURRENT_TIMESTAMP, 0, ?, ?, ?);";
+				sql = "insert into board values(NULL, ?, ?, ?, ?, CURRENT_TIMESTAMP, 0, ?, ?, ?, 0);";
 				pstmt = con.prepareStatement(sql);
 				pstmt.setString(1, article.getTitle());
 				pstmt.setInt(2, grp);
